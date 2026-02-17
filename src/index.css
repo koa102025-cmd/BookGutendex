@@ -1,4 +1,12 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
+	width: 100svw;
+	height: 100svh;
 	font-family:
 		system-ui,
 		-apple-system,
@@ -11,4 +19,28 @@ body {
 		"Open Sans",
 		"Helvetica Neue",
 		sans-serif;
+	background-color: rgb(237, 241, 246);
+}
+
+html {
+	/* Минимум: 14px (на 320px)
+       Максимум: 24px (на 2500px)
+       Масштабирование происходит плавно по всей ширине
+    */
+	font-size: clamp(
+		12px,
+		12px + (24 - 12) * ((100vw - 320px) / (2500 - 320)),
+		24px
+	);
+}
+
+/* Если на ноутбуках (1300px - 1600px) всё равно кажется крупновато, 
+   можно добавить легкую корректировку только для этого диапазона, 
+   но без фанатизма, чтобы не было прыжка.
+*/
+@media screen and (min-width: 1100px) and (max-width: 1600px) {
+	html {
+		/* Чуть замедляем рост шрифта именно здесь */
+		font-size: clamp(16px, 0.1rem + 0.3vw, 19px);
+	}
 }

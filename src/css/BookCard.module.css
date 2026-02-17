@@ -1,0 +1,73 @@
+.card {
+	height: 31rem;
+	background: linear-gradient(145deg, #ffffff, #f9f9f9);
+	border-radius: 20px;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, 0.103);
+	transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	position: relative;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.card:hover {
+	transform: translateY(-12px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	border-color: rgba(0, 123, 255, 0.2);
+}
+
+.image {
+	width: 100%;
+	aspect-ratio: 2 / 3;
+	object-fit: cover;
+	border-radius: 12px;
+	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.15);
+	transition: all 0.3s ease;
+}
+
+.card:hover .image {
+	transform: scale(1.05) rotate(1deg);
+}
+
+.title {
+	font-size: 1.15rem;
+	font-weight: 800;
+	color: #2d3436;
+	line-height: 1.3;
+	margin: 1.2rem 0 0.5rem 0;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.card p {
+	font-size: 0.95rem;
+	color: #636e72;
+	margin-bottom: 1rem;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.link {
+	margin-top: auto;
+	text-decoration: none;
+	background: #007bff;
+	color: white;
+	padding: 0.8rem 1.5rem;
+	border-radius: 12px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	width: 100%;
+	box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.link:hover {
+	background: #0056b3;
+	box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+	transform: translateY(-2px);
+}
