@@ -27,7 +27,7 @@ const CategoryPage = () => {
 			{/* Grid of book cards or skeletons while loading */}
 			<div className={styles.grid}>
 				{isLoading
-					? [...Array(12)].map((_, i) => (
+					? [...Array(10)].map((_, i) => (
 							<div key={i} className={styles.skeletonCard} />
 						))
 					: books.map((book) => <BookCard key={book.id} book={book} />)}
