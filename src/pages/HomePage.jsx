@@ -4,7 +4,6 @@ import BookCard from "../components/BookCard.jsx";
 import styles from "../css/CategoryPage.module.css";
 
 const HomePage = () => {
-	// Get search query from URL (?search=...)
 	const [searchParams] = useSearchParams();
 	const searchQuery = searchParams.get("search");
 

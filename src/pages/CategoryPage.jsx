@@ -6,7 +6,6 @@ import styles from "../css/CategoryPage.module.css";
 const CategoryPage = () => {
 	const { categoryName } = useParams();
 
-	// Base URL depends on the category from the URL
 	const baseUrl = `https://gutendex.com/books?topic=${categoryName}`;
 
 	// Pass baseUrl to custom hook. It handles fetching and pagination.

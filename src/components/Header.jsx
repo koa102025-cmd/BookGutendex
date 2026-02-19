@@ -21,7 +21,6 @@ const categories = [
 ];
 
 const Header = () => {
-	// Search input state
 	const [query, setQuery] = useState("");
 	// Dropdown menu state
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,8 +32,8 @@ const Header = () => {
 	const handleSearch = (e) => {
 		e.preventDefault();
 		if (query.trim()) {
-			navigate(`/?search=${query.trim()}`); // Navigate to search results page
-			setQuery(""); // Clear input after search
+			navigate(`/?search=${query.trim()}`);
+			setQuery("");
 		}
 	};
 

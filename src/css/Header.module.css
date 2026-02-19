@@ -6,6 +6,7 @@
 	z-index: 1000;
 	padding: 0.8rem 5%;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	height: 5.5rem;
 
 	display: flex;
 	align-items: center;
@@ -100,7 +101,7 @@
 .link {
 	text-decoration: none;
 	color: #64748b;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	font-weight: 600;
 	padding: 0.5rem 0.8rem;
 	border-radius: 8px;
@@ -129,7 +130,7 @@
 	border: 1px solid #e2e8f0;
 	padding: 0.5rem 1rem;
 	border-radius: 8px;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	font-weight: 600;
 	color: #1e293b;
 	cursor: pointer;
