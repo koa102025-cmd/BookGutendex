@@ -36,8 +36,9 @@
 	font-size: 1.15rem;
 	font-weight: 800;
 	color: #2d3436;
-	line-height: 1.3;
+	line-height: 1.1;
 	margin: 1.2rem 0 0.5rem 0;
+	line-clamp: 2;
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
@@ -70,4 +71,36 @@
 	background: #0056b3;
 	box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
 	transform: translateY(-2px);
+}
+
+.favButton {
+	position: absolute;
+	right: 1.2rem;
+	top: 1.2rem;
+	width: 2.3rem;
+	height: 2.3rem;
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	color: #636e72;
+}
+
+.favButton:hover {
+	transform: scale(1.15);
+	background: #ffffff;
+	color: #ffd747;
+	box-shadow: 0 6px 15px rgba(255, 212, 71, 0.25);
+}
+
+.favButton.active {
+	color: #ffd447;
+	background: #ffffff;
 }

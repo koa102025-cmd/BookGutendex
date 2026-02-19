@@ -74,6 +74,7 @@
 }
 
 .title span {
+	height: 4rem;
 	font-size: 2.5rem;
 	font-weight: 900;
 	color: #1a1a1a;
@@ -83,6 +84,7 @@
 	position: relative;
 
 	background: linear-gradient(90deg, #007bff, #00d2ff);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -90,11 +92,11 @@
 .title span::after {
 	content: "";
 	position: absolute;
-	bottom: -8px;
+	bottom: 15px;
 	left: 0;
-	width: 60px;
+	width: 4rem;
 	height: 5px;
-	background: linear-gradient(90deg, #007bff, #00d2ff);
+	background: linear-gradient(90deg, #007bff, #00d0ff57);
 	border-radius: 10px;
 	-webkit-text-fill-color: initial;
 }
@@ -107,5 +109,13 @@
 
 .error {
 	color: red;
+	text-align: center;
+}
+
+.emptyMessage {
+	color: #4d5558;
+	font-size: 1.1rem;
+	margin-top: -1.5rem;
+	font-style: italic;
 	text-align: center;
 }
